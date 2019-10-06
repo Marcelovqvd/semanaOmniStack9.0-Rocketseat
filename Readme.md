@@ -73,3 +73,51 @@ Os dados vão estar dentro de 'req.body' (corpo da requisição).
 ## Iniciando aplicação
 
 #### Conexão com banco de dados
+
+Mongo DB - Não relacional, performático. Oferece serviço gratuito de hospedagem de dados.
+
+Acessar MongoDB Atlas
+
+- Cluster
+- Build a Cluster - p criar um servidor
+- Create Cluster
+- Database Access - acessar o servidor pelo Node
+- Criar usuário (obs. User e senha = omnistack)
+- Network Access - Allow access from anywhere
+- Em Clusters - Connect your application; Driver - NodeJS; Copiar URL.
+
+#### Mongoose
+
+    $ yarn add mongoose
+
+Biblioteca p trabalhar com dados no MongoDB.
+
+Configurar URL.
+
+Se der erro para executar o servidor, deve-se trocar a versão do Clusters.
+
+37` do vídeo - possíveis erros e suas soluções.
+
+#### Padrão MVC
+
+39` Aqui, o View vai ser com o React. Aqui só teremos Model e Controllers.
+
+- Model - representa uma tabela no banco de dados, um Schema
+
+  src/models/Users.js
+
+- Controller - Recebe a requisição, faz as regras de negócios e devolve resposta. onde vão estar as regras de negócios da aplicação (somente enquanto a aplicação não for muito grande)
+
+src/controllers/SessionControllers.js
+
+Dentro do controller vão estar os métodos para cada rota do padrão MVC.
+
+Métodos:
+
+- index - lista as sessões;
+- show - lista uma só sessão;
+- store - cria sessão;
+- update - alterar sessão;
+- destroy - deletar sessão.
+
+Criar a base_url no Environment do Insomnia
