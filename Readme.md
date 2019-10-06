@@ -72,6 +72,4 @@ Os dados vão estar dentro de 'req.body' (corpo da requisição).
 
 ## Iniciando aplicação
 
-Parei 27`
-
-#### Rotas
+#### Conexão com banco de dados
