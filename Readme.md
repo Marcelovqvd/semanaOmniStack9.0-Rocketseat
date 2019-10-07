@@ -121,3 +121,25 @@ Métodos:
 - destroy - deletar sessão.
 
 Criar a base_url no Environment do Insomnia
+
+## Criação e listagem dos spots
+
+Quando o usuário logar, vai poder cadastrar um novo spot que vai ter: imagem, empresa, tecnologis e valor da diária do spot.
+
+Criar model 'Spot.js' e spotController
+
+56`passando imagem do spot:
+O formato json não suporta imagem.
+Então, no insomnia deve-se usar Multport Form.
+
+instalar lib para formato Multport (upload de imagens, arquivos, etc)
+
+    $ yarn add multer
+
+src/config/upload.js
+
+criar pasta uploads na raiz
+
+Importar multer e uploadConfig em routes.js
+
+#### finalizado com erros...
